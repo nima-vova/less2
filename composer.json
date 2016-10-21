@@ -1,0 +1,11 @@
+{
+    "name": "nima/less2",
+    "description": "less2 geekhub",
+    "authors": [
+        {
+            "name": "Vladimir Nimchyn",
+            "email": "nima.vova@gmail.com"
+        }
+    ],
+    "require": {}
+}
