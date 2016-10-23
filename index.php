@@ -6,7 +6,18 @@
 
 </head>
 <body>
+<?
+//phpinfo();
+//require __DIR__ . '/vendor/autoload.php';
 
+//require "vendor/autoload.php";
+require 'vendor/autoload.php';
+
+use Carbon\Carbon;
+
+printf("Now: %s", Carbon::now());
+
+?>
 
 </body>
 </html>
