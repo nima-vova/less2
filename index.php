@@ -7,6 +7,7 @@
 </head>
 <body>
 <?
+<<<<<<< HEAD
 require __DIR__ . '/vendor/autoload.php';
 use Cocur\Slugify\Slugify;
 $slugify = new Slugify();
@@ -26,6 +27,20 @@ else {
     <p>введите строку <input type="text" name="name" /></p>
     <p><input type="submit" /></p>
 </form>
+=======
+//phpinfo();
+//require __DIR__ . '/vendor/autoload.php';
+
+//require "vendor/autoload.php";
+require 'vendor/autoload.php';
+
+use Carbon\Carbon;
+
+printf("Now: %s", Carbon::now());
+
+
+?>
+>>>>>>> time
 
 </body>
 </html>
