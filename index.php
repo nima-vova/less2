@@ -6,24 +6,37 @@
 
 </head>
 <body>
-<form action="index.php" method="post">
+ <pre>              Формируем URL из строки
+
+     <?
+
+     //require __DIR__ . '/vendor/autoload.php';
+     require 'vendor/autoload.php';
+
+     use Cocur\Slugify\Slugify;
+     $slugify = new Slugify();
+     if (isset($_POST['name'])) {
+         echo "<br>              Результат: " . $slugify->slugify($_POST['name'],'_') . "<br>";
+         //unset($name);
+     }
+     unset($_POST['name']);
+     ?>
+ </pre>
+
+ <form action="index.php" method="post">
     <p>введите строку <input type="text" name="name" /></p>
     <p><input type="submit" /></p>
+
+
 </form>
-<?
 
-//require __DIR__ . '/vendor/autoload.php';
-require 'vendor/autoload.php';
+ <div style="background-color:grey">
+     <?
+     use Carbon\Carbon;
 
-  use Cocur\Slugify\Slugify;
-  $slugify = new Slugify();
-  $name=$_POST['name'];
-  echo $slugify->slugify($name)."<br>";
-      //unset($name);
-
-  use Carbon\Carbon;
-  printf("Now: %s", Carbon::now());
-?>
+     echo " время на сервере: ". Carbon::now();
+      ?>
+ </div>
 
 </body>
 </html>
