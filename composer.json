@@ -9,7 +9,9 @@
     ],
     "require": {
 
-   "php":"<=5.6.27",  
+   "php":"<=5.6.27",
+   "ext-mbstring":"*",
+    "ext-curl":"*",
    "cocur/slugify": "2.*",
    "nesbot/carbon": "^1.21" 
 }
